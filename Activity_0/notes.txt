@@ -1,0 +1,3 @@
+First activity for BeagleBone Black series of ESDF labs
+
+Getting familiar with Linux commands
