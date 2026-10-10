@@ -26,7 +26,7 @@ int main(void)
     
     /* Configure GPIO as output */
     
-    snprintf(path, sizeof(path), "/sys/class/gpio%d/direction", GPIO);
+    snprintf(path, sizeof(path), "/sys/class/gpio/gpio%d/direction", GPIO);
     
     write_gpio(path, "out");
     
@@ -37,7 +37,7 @@ int main(void)
     	
     	/* LED ON*/
     	write_gpio(path, "1");
-    	printf("LED OFF\n");
+    	printf("LED ON\n");
     	sleep(1);
     	
     	/* LED ON*/
