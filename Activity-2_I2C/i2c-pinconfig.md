@@ -40,3 +40,10 @@ sudo i2cdetect -y -r 2
 ```
 
 You should see 68 visible in the output.
+
+
+```
+sudo i2cget -y 2 0x68 0x75
+```
+
+Now you should be able to run programs that use i2c!
