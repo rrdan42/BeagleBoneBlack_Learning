@@ -1,3 +1,3 @@
 # BeagleBoneBlack Labs
 
-BeagleBoneBlack series of labs for ESDF
+Comands and code for BeagleBoneBlack series of labs for ESDF
