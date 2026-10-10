@@ -13,3 +13,9 @@ Then, set the mode to i2c:
 sudo config-pin P9.19 i2c
 sudo config-pin P9.20 i2c
 ```
+
+Then check i2c devices in device list (/dev) 
+```
+ls -l /dev/i2c*
+```
+
