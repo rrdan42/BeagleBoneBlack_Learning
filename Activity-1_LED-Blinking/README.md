@@ -2,7 +2,8 @@
 
 First we need to write the C code. I've written this in led_blinking.c
 
-Then we need to transfer the C file to the BBB:
+If you write the code in the BBB terminal, no need to copy it as it's already on the BeagleBone Black.
+If you write the code on your machine (PC), we need to transfer the C file to the BBB:
 ```
 scp ./led_blinking.c debian@192.168.7.2:/home/debian/radhan-daksh/activity1/led_blinking.c
 ```
