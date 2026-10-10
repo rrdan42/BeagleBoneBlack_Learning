@@ -19,3 +19,24 @@ Then check i2c devices in device list (/dev)
 ls -l /dev/i2c*
 ```
 
+
+
+# Hardware Connections
+
+We're using MPU9250. This should map to address 0x68
+
+ | MPU9250 Pin | BBB Pin |
+ |-------------|---------|
+ | VCC | 3V3 |
+ | GND | DGND |
+ | SCL | SCL |
+ | SDA | SDA |
+ 
+You can find the pin diagram of BBB here: https://vadl.github.io/images/bbb/bbb_headers.png
+
+Then, in the BBB terminal, run:
+```
+sudo i2cdetect -y -r 2
+```
+
+You should see 68 visible in the output.
